@@ -5,7 +5,7 @@ from sklearn.externals import joblib
 import numpy as np
 
 # モデルの呼び出しはグローバル変数のところで書くことがベター
-loaded_model = joblib.load('demo_app/demo_model.pkl')
+loaded_model = joblib.load('/home/airder/airder.pythonanywhere.com/demo_app/demo_model.pkl')
 
 def index(request):
     return render(request, 'demo_app/index.html', {})
